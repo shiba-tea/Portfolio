@@ -78,10 +78,19 @@ header::after{
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.image {
-  width: 100%;
-  height: 150px;
-  background: white;
+img{
+  display: block;
+  margin: 0 auto;
+}
+
+.content img {
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 5px #00000022;
+}
+
+.content:hover img {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 12px #00000044;
 }
 
 @media (max-width: 600px) {
