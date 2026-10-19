@@ -72,7 +72,7 @@ header::after{
 .content {
   box-sizing: border-box;
   min-width: 300px;
-  padding: 20px;
+  padding: 20px 20px 0;
   border-radius: 20px;
   background: #ffffff44;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -88,7 +88,7 @@ img{
   box-shadow: 0 2px 5px #00000022;
 }
 
-.content:hover img {
+.content img:hover {
   transform: translateY(-3px);
   box-shadow: 0 5px 12px #00000044;
 }
@@ -114,6 +114,24 @@ img{
   font-size: 12px;
   font-style: italic;
   color: #393a36aa;
+}
+
+.code{
+  margin: 15px;
+  text-align: center;
+}
+.code a{
+  color: #7c2d12;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.code a:hover {
+  color: #a46f50;
+}
+
+.code a:active {
+  color: #d97706;
 }
 
 #main::after{
